@@ -31,3 +31,14 @@
 # Debug files
 *.dSYM/
 *.su
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+build
+out
+node_modules
+tmp
