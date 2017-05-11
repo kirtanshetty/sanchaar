@@ -3,7 +3,7 @@ project(prasaran)
 
 SET(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -s")
 
-file(GLOB SOURCES "lib/*.c")
+file(GLOB SOURCES "src/*.c")
 
 ADD_LIBRARY(prasaran SHARED ${SOURCES})
 
