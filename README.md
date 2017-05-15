@@ -1,4 +1,4 @@
-# prasaran
+# Sanchaar
 
 Build instructions
 
