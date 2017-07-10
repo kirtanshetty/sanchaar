@@ -64,16 +64,13 @@ int s_create_server(s_server_config* ssc){
   server->server_addr.sin_port = ssc->port;
 
   bind(server->lfd, (struct sockaddr*)&server->server_addr, sizeof(server->server_addr));
-
-  printf("server->cfd %d\n", server->cfd);
   return server->lfd;
 }
 
 void s_start_server(){
-  printf("server->cfd %d\n", server->cfd);
   listen(server->lfd, server->ssc.max_cli);
-  printf("server->ssc->max_cli %d\n", server->ssc.max_cli);
   while(1) {
+    printf("Sanchaar is waiting for clients at port %d\n", server->server_addr.sin_port);
     server->cfd = accept(server->lfd, (struct sockaddr*)NULL, NULL);
     printf("Client connected %d\n", server->cfd);
 
