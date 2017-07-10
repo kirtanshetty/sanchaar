@@ -1,6 +1,7 @@
-#include "../src/ss.h"
+#include "../src/server/ss.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 int main() {
   s_server_config serv_config;
